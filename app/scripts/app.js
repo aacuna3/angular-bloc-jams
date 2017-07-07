@@ -14,6 +14,7 @@
     })
     .state('album', {
       url: '/album',
+      controller: 'AblumCtrl as album',
       templateUrl: '/templates/album.html'
     })
     .state('collection', {
@@ -22,6 +23,7 @@
       templateUrl: '/templates/collection.html'
     });
   }
+
   angular
   .module('blocJams', ['ui.router'])
   .config(config);
